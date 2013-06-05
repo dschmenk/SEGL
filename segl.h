@@ -2,14 +2,14 @@
 #define eglUpdateDisplay(state) eglSwapBuffers((state)->display, (state)->surface)
 
 typedef struct {
-   EGLint x, y, width, height;
+    EGLint x, y, width, height;
 } EGLRect;
 
 typedef struct {
-   EGLRect    win;
-   EGLDisplay display;
-   EGLSurface surface;
-   EGLContext context;
+    EGLRect    win;
+    EGLDisplay display;
+    EGLSurface surface;
+    EGLContext context;
 } EGLDisplayState;
 
 EGLNativeWindowType eglNativeWindow(char *winTitle, EGLint *winWidth, EGLint *winHeight, EGLint winFlags);

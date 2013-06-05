@@ -9,4 +9,4 @@ LDFLAGS+=-L/opt/vc/lib/ -lGLESv2 -lEGL -lbcm_host -lvcos -lvchiq_arm segl.o
 all: $(OBJS) $(BIN)
 
 clean:
-	rm $(BIN) $(OBJS)
+	rm $(BIN) $(OBJS) *~
